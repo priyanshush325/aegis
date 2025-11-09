@@ -1,11 +1,18 @@
 {
   "name": "aegis-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "CLI tool for initializing and managing monorepos with standardized architecture",
   "type": "module",
   "bin": {
     "aegis": "./bin/cli.js"
   },
+  "files": [
+    "dist/",
+    "bin/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -29,11 +36,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/priyanshusharma/aegis.git"
+    "url": "https://github.com/priyanshush325/aegis.git"
   },
-  "homepage": "https://github.com/priyanshusharma/aegis#readme",
+  "homepage": "https://github.com/priyanshush325/aegis#readme",
   "bugs": {
-    "url": "https://github.com/priyanshusharma/aegis/issues"
+    "url": "https://github.com/priyanshush325/aegis/issues"
   },
   "dependencies": {
     "commander": "^11.1.0",
