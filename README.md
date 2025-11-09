@@ -282,7 +282,7 @@ Run `pnpm clean` to remove all build artifacts and `node_modules`, then `pnpm in
 
 ## Contributing
 
-This package is based on the airplai-monorepo architecture. Contributions welcome!
+Contributions welcome!
 
 ## License
 
