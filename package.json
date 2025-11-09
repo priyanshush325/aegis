@@ -19,10 +19,22 @@
     "fastapi",
     "workspace",
     "pnpm",
-    "npm"
+    "npm",
+    "turborepo",
+    "drizzle",
+    "tailwind",
+    "typescript"
   ],
-  "author": "",
+  "author": "Priyanshu Sharma",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priyanshusharma/aegis.git"
+  },
+  "homepage": "https://github.com/priyanshusharma/aegis#readme",
+  "bugs": {
+    "url": "https://github.com/priyanshusharma/aegis/issues"
+  },
   "dependencies": {
     "commander": "^11.1.0",
     "inquirer": "^9.2.12",

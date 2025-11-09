@@ -28,7 +28,14 @@ npx aegis-monorepo init my-monorepo
 
 ### Initialize a New Monorepo
 
+**With npx (no installation):**
 ```bash
+npx aegis-monorepo init my-monorepo
+```
+
+**Or install globally first:**
+```bash
+npm install -g aegis-monorepo
 aegis init my-monorepo
 ```
 
@@ -50,6 +57,14 @@ pnpm dev      # Start all apps
 
 ### Add a New App
 
+**With npx:**
+```bash
+npx aegis-monorepo add next      # Add Next.js app
+npx aegis-monorepo add fastapi   # Add FastAPI backend
+npx aegis-monorepo add vite      # Add Vite React app
+```
+
+**With global install:**
 ```bash
 aegis add next      # Add Next.js app
 aegis add fastapi   # Add FastAPI backend
@@ -79,19 +94,23 @@ my-monorepo/
 
 ## Commands
 
-### `aegis init [directory]`
+### `aegis init [directory]` or `npx aegis-monorepo init [directory]`
 
 Initialize a new monorepo with interactive prompts.
 
 **Options:**
 - `directory` - Target directory (default: current directory)
 
-**Example:**
+**Examples:**
 ```bash
+# With global install
 aegis init my-app
+
+# With npx
+npx aegis-monorepo init my-app
 ```
 
-### `aegis add <type>`
+### `aegis add <type>` or `npx aegis-monorepo add <type>`
 
 Add a new app to your existing monorepo.
 
@@ -102,9 +121,15 @@ Add a new app to your existing monorepo.
 
 **Examples:**
 ```bash
+# With global install
 aegis add next
 aegis add fastapi
 aegis add vite
+
+# With npx
+npx aegis-monorepo add next
+npx aegis-monorepo add fastapi
+npx aegis-monorepo add vite
 ```
 
 ## Features in Detail
@@ -265,4 +290,4 @@ MIT
 
 ## Author
 
-Built with ❤️ for modern monorepo development
+Priyanshu Sharma (X @peeanshu, GitHub @priyanshush325)
