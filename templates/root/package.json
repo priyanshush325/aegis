@@ -1,0 +1,33 @@
+{
+  "name": "{{orgName}}-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for {{orgName}} projects",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "dotenvx run -- node scripts/dev.js",
+    "build": "dotenvx run -- turbo build",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "create-app": "node scripts/create-app.js",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.0.0",
+    "@types/node": "^20.0.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.1.0",
+    "run-pty": "^5.0.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0"
+  },
+  "packageManager": "{{packageManager}}@8.15.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

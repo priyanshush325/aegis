@@ -1,0 +1,9 @@
+{
+  "name": "{{appName}}",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "./dev.sh",
+    "start": "uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  }
+}

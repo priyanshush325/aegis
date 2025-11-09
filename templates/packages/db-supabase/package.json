@@ -1,0 +1,27 @@
+{
+  "name": "@{{orgName}}/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./client": "./src/client.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.30.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "postgres": "^3.4.0",
+    "next-auth": "^5.0.0-beta.25"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

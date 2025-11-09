@@ -1,0 +1,29 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
+@source "../src";
+
+/* Interactive animation utilities for buttons and interactive elements */
+.interactive-scale {
+  transition: transform 200ms ease-out;
+}
+
+.interactive-scale:hover {
+  transform: scale(1.05);
+}
+
+.interactive-scale:active {
+  transform: scale(0.98);
+}
+
+.interactive-shadow {
+  transition: box-shadow 200ms ease-out;
+}
+
+.interactive-shadow-hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.interactive-shadow-active {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

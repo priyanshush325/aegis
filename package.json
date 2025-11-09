@@ -1,0 +1,42 @@
+{
+  "name": "aegis-monorepo",
+  "version": "1.0.0",
+  "description": "CLI tool for initializing and managing monorepos with standardized architecture",
+  "type": "module",
+  "bin": {
+    "aegis": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "monorepo",
+    "cli",
+    "scaffold",
+    "nextjs",
+    "fastapi",
+    "workspace",
+    "pnpm",
+    "npm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "fs-extra": "^11.2.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

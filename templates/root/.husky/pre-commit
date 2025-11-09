@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🏗️  Building all apps before commit..."
+
+BUILD_OUTPUT=$({{packageManager}} build 2>&1)
+BUILD_EXIT_CODE=$?
+
+if [ $BUILD_EXIT_CODE -eq 0 ]; then
+  echo "✅ All apps built successfully!"
+else
+  echo "❌ Build failed! Please fix the errors above before committing."
+  exit 1
+fi
