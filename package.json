@@ -1,6 +1,6 @@
 {
   "name": "aegis-monorepo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CLI tool for initializing and managing monorepos with standardized architecture",
   "type": "module",
   "bin": {
